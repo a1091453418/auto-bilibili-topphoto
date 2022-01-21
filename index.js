@@ -66,7 +66,8 @@ async function painting(){
     clearCanvas();
 
     //添加背景图
-    const bgImage = await loadImage('bg.jpg');
+//     const bgImage = await loadImage('bg.jpg');
+    const bgImage = await loadImage('youmu.jpeg');
     ctx.drawImage(bgImage, 0, 0, canvasSize.w, canvasSize.h);
 
     //设置文字颜色和字号，字体
