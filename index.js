@@ -57,7 +57,8 @@ async function getLastPubDistance(){
         url:"https://api.bilibili.com/x/space/arc/search?mid="+DEDEUSERID+"&pn=1&ps=1&order=pubdate&jsonp=jsonp"
     });
     console.log(res)
-    return diffDays(new Date(res.data.data.list.vlist[0].created*1000),new Date())+"";
+    return '10'
+//     return diffDays(new Date(res.data.data.list.vlist[0].created*1000),new Date())+"";
 }
 
 //执行绘制图片
