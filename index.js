@@ -52,7 +52,7 @@ const diffDays = (date, otherDate) => Math.ceil(Math.abs(date - otherDate) / (10
 
 //获取自己鸽的天数
 async function getLastPubDistance(){
-    //https://api.bilibili.com/x/space/arc/search?mid="+(event.bili_user_id||'422646817')+"&ps=10&tid=0&pn="+(event.page||1)+"&keyword=&order=pubdate&jsonp=jsonp
+    //https://api.bilibili.com/x/space/arc/search?mid="+(event.bili_user_id||'2634742')+"&ps=10&tid=0&pn="+(event.page||1)+"&keyword=&order=pubdate&jsonp=jsonp
     const res = await axios.request({
 //         url:"https://api.bilibili.com/x/space/arc/search?mid="+DEDEUSERID+"&pn=1&ps=1&order=pubdate&jsonp=jsonp"
         url: "https://api.bilibili.com/x/space/arc/search?mid="+(event.bili_user_id||'422646817')+"&ps=10&tid=0&pn="+(event.page||1)+"&keyword=&order=pubdate&jsonp=jsonp"
